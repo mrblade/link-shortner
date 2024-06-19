@@ -10,6 +10,7 @@
         goto('/');
     }
 
+  
     /**
 	 * @type {string | any[]}
 	 */
@@ -70,6 +71,7 @@
     }
 
     onMount(()=>{
+        console.log(import.meta.env.VITE_POCKETBASE_URL);
         getLinks();
     })
 
